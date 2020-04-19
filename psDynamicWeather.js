@@ -2,7 +2,7 @@
 // @name          Showdown Dynamic Weather
 // @description	  The basic theme with dynamic weather
 // @author        Will_the_Wizard
-// @homepage      https:/
+// @homepage      https://github.com/iwtw666/psweather
 // @include       http://play.pokemonshowdown.com/*
 // @include       https://play.pokemonshowdown.com/*
 // @include       http://*.play.pokemonshowdown.com/*
@@ -17,6 +17,9 @@
 // @include       https://*.psim.us/*
 // @run-at        document-start
 // @version       0.5
+// thanks for: Showdown Pro v1.06 (BETA) [https://userstyles.org/styles/userjs/180579/showdown-pro-v1-06-beta.user.js]
+// thanks for: 13ulb's Dark Theme - Pokemon Showdown [https://userstyles.org/styles/userjs/108076/13ulb-s-dark-theme-pokemon-showdown.user.js]
+   
 // ==/UserScript==
 
 (function() {var css = [
@@ -35,7 +38,6 @@
 	"}",
 	"",
 	".movemenu label:hover {",
-
 	"letter-spacing: 2px;",
 	"color: #FFF;",
 	"text-transform: uppercase;",
@@ -56,7 +58,6 @@
 	"",
 	".pp,",
 	".type {",
-
 	"letter-spacing: 0.3px;",
 	"text-transform: uppercase;",
 	"font-weight: 500;",
@@ -80,7 +81,6 @@
 	".movemenu button.type-Flying small,",
 	".movemenu button.type-Psychic small,",
 	".movemenu button.type-Bug small {",
-
 	"letter-spacing: 0.3px;  ",
 	"font-size: 8.5px;",
 	"text-transform: uppercase;",
@@ -88,7 +88,6 @@
 	"}",
 	"",
 	".movemenu button:disabled small {",
-
 	"letter-spacing: 0.3px;",
 	"font-size: 8.5px;",
 	"text-transform: uppercase;",
@@ -108,13 +107,11 @@
 	"/* Changes Pokemon LV  */",
 	"",
 	".statbar strong small { ",
-
 	"letter-spacing: 0.3px;",
 	"font-weight: 300;",
 	"}",
 	"",
 	".statbar .hpbar .hptext {",
-
 	"letter-spacing: 0.3px;",
 	"font-weight: 700;",
 	"}",
@@ -122,27 +119,22 @@
 	"/* Changes Turn Box */",
 	"",
 	".turn {",
-
 	"letter-spacing: 0.3px;",
 	"border: none;",
 	"opacity: 1;",
 	"}",
 	"",
 	".turn.style {",
-
 	"letter-spacing: 0.3px;",
 	"border: none;",
 	"opacity: 1;",
 	"}",
 	"",
 	".backdrop:after {",
-
 	"letter-spacing: 0.3px;",
 	"display: inline-block;",
 	"content: \"\";",
 	"background:",
-	"/*     			 linear-gradient(to top, #eef2f5, transparent 7%), */",
-	"            url(http://pedrojmiranda.com/img/rotate.php) no-repeat;",
 	"position: absolute;",
 	"width: 700px;",
 	"height: 450px;",
@@ -202,25 +194,21 @@
 	"}",
 	"",
 	".battle-history small { ",
-
 	"letter-spacing: 0.3px;",
 	"color: #bd5252;",
 	"}",
 	"",
 	".battle-log {",
-
 	"letter-spacing: 0.3px;",
 	"border: none;",
 	"}",
 	"",
 	".userlist {",
-
 	"letter-spacing: 0.3px;",
 	"border: none;",
 	"}",
 	"",
 	".battle-log-add {",
-
 	"letter-spacing: 0.3px;",
 	"border: none;",
 	"}",
@@ -230,7 +218,6 @@
 	"} */",
 	"",
 	"#tooltipwrapper .tooltip {",
-
 	"letter-spacing: 0.3px;",
 	"border: 1px solid #e3e3e3;",
 	"background: rgba(255,255,255, 0.95);",
@@ -352,7 +339,7 @@
 	"",
 	"/* Weather */",
 	"",
-    ".sunweather,",
+        ".sunweather,",
 	".sunnydayweather,",
 	".desolatelandweather",
 	"{",
@@ -361,7 +348,7 @@
 	"text-shadow: #FFFFFF 5px 5px 0, #FFFFFF 1px -1px 0, #FFFFFF -1px 1px 0, #FFFFFF -1px -1px 0;",
 	"background-size:cover;",
 	"}",
-    "",
+        "",
 	".rainweather,",
 	".raindanceweather,",
 	".primordialseaweather",
@@ -409,7 +396,6 @@
 	"width: 320px !important;",
 	"}",
 	".message {",
-
 	"letter-spacing: 0.3px;  ",
 	"}",
 	"",
@@ -433,7 +419,6 @@ if (typeof GM_addStyle != "undefined") {
 	if (heads.length > 0) {
 		heads[0].appendChild(node);
 	} else {
-		// no head yet, stick it whereever
 		document.documentElement.appendChild(node);
 	}
 }
